@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Silkscreen&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap%27');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    -moz-box-sizing: border-box;
+    letter-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(9, 2, 20);
+}
+
+header {
+    background-color: rgb(12, 2, 28);
+    box-shadow: 0px 3px 10px #464646;
+    
+}
+
+.logo {
+    animation: neon 3s alternate infinite ease-in;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(123, 24, 168);
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 #9370DB);
+    }
+
+    to {
+        filter: drop-shadow(0 0 80px #9370DB);
+    }
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.titulo{
+    color: white;
+    text-align: center;
+    margin: 2rem auto;
+}
+.sub-titulo{
+    color: #fff;
+    text-align: center;
+    margin: 0 auto 2rem auto;
+}
+
+input{
+    margin: .8rem auto 1.7rem auto;
+    padding: .8rem;
+    border-radius: 15px;
+    outline: none;
+}
+
+label{
+    font-weight: bolder;
+    font-size: 1.1rem;
+}
+
+textarea{
+    margin: .8rem auto 1.7rem auto;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+#mapa{
+    border-radius: 13px;
+}
+
+.titulo-mapa{
+    margin: 3rem auto;
+}
+
+.localizacao{
+    display: block;
+    margin: 3rem auto;
+    text-align: center;
+    color: #fff;
+}
+form{
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 5px 5px 30px white;
+    border-radius: 17px;
+    padding: 1rem 5rem 2rem 5rem;
+    color: #fff;
+    display: block;
+    width: 80vh;
+    margin: 4rem auto;
+ }
+
+ footer {
+    padding: 2rem 0;
+    background-color: rgb(12, 2, 28);
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.logo-footer {
+    animation: neon 3s alternate infinite ease-in;
+    color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(123, 24, 168);
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.footer-bar {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-bar ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+#item-footer {
+    padding-left: .5rem;
+}
+
+.contatos li {
+    padding: 0.4rem 0;
+}
+
+@media screen and (max-width: 912px) {
+    .titulo{
+        color: white;
+        text-align: center;
+        margin: 2rem auto;
+        font-size: 1.1rem;
+    }
+    .sub-titulo{
+        color: #fff;
+        text-align: center;
+        margin: 0 auto 2rem auto;
+        font-size: 1.1rem;
+    }
+    
+    input{
+        margin: .6rem auto 1.7rem auto;
+        padding: .5rem;
+        border-radius: 15px;
+        outline: none;
+    }
+    
+    label{
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+    
+    textarea{
+        margin: .8rem auto 1.7rem auto;
+        border-radius: 8px;
+        outline: none;
+        width: 40vw;
+        text-align: center;
+    }
+
+    #mapa{
+        border-radius: 13px;
+        height: 50vh;
+        width: 80vw;
+    }
+    
+    .titulo-mapa{
+        margin: 3rem auto;
+        font-size: 1.4rem;
+    }
+    
+    .localizacao{
+        display: block;
+        margin: 3rem auto;
+        text-align: center;
+        color: #fff;
+    }
+
+    form{
+        text-align: center;
+        border: 1px solid transparent;
+        box-shadow: 5px 5px 30px white;
+        border-radius: 17px;
+        padding: 1rem 5rem 2rem 5rem;
+        color: #fff;
+        display: block;
+        width: 40vh;
+        margin: 4rem auto;
+     }
+
+     .texto-sobre{
+        padding: 0 4rem;
+        text-align: justify;
+        font-size: 2rem;
+        color: #fff;
+    }
+}    
+
+
+@media screen and (max-width: 768px){
+    body{
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .titulo{
+        color: white;
+        text-align: center;
+        margin: 2rem auto;
+        font-size: 1.1rem;
+    }
+    .sub-titulo{
+        color: #fff;
+        text-align: center;
+        margin: 0 auto 2rem auto;
+        font-size: 1.1rem;
+    }
+    
+    input{
+        margin: .6rem auto 1.7rem auto;
+        padding: .5rem;
+        border-radius: 15px;
+        outline: none;
+    }
+    
+    label{
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+    
+    textarea{
+        margin: .8rem auto 1.7rem auto;
+        border-radius: 8px;
+        outline: none;
+        width: 30vw;
+        text-align: center;
+    }
+
+    #mapa{
+        border-radius: 13px;
+        height: 50vh;
+        width: 80vw;
+    }
+    
+    .titulo-mapa{
+        margin: 3rem auto;
+        font-size: 1.4rem;
+    }
+    
+    .localizacao{
+        display: block;
+        margin: 3rem auto;
+        text-align: center;
+        color: #fff;
+    }
+
+    form{
+        text-align: center;
+        border: 1px solid transparent;
+        box-shadow: 5px 5px 30px white;
+        border-radius: 17px;
+        padding: 1rem 5rem 2rem 5rem;
+        color: #fff;
+        display: block;
+        width: 40vh;
+        margin: 4rem auto;
+     }
+
+     .texto-sobre{
+        padding: 0 4rem;
+        text-align: justify;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .footer-bar {
+        color: white;
+        display: block;
+        font-size: 0.7rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer {
+        padding: 0.9rem 0;
+        background-color: rgb(12, 2, 28);
+        box-shadow: 0px 3px 10px #464646;
+        margin-top: 1rem;
+    }
+
+    .logo-footer {
+        padding-bottom: 0.4rem;
+        display: block;
+        align-items: center;
+        font-size: 0.9rem;
+        transition: 2s all ease;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .titulo{
+        color: white;
+        text-align: center;
+        margin: 2rem auto;
+        font-size: 1.1rem;
+    }
+    .sub-titulo{
+        color: #fff;
+        text-align: center;
+        margin: 0 auto 2rem auto;
+        font-size: 1.1rem;
+    }
+    
+    input{
+        margin: .6rem 0 1.7rem 0;
+        padding: .5rem;
+        border-radius: 15px;
+        outline: none;
+    }
+    
+    label{
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+    
+    textarea{
+        margin: .8rem 0 1.7rem 0;
+        border-radius: 8px;
+        outline: none;
+        width: 50vw;
+        text-align: left;
+    }
+
+    #mapa{
+        border-radius: 13px;
+        height: 50vh;
+        width: 80vw;
+    }
+    
+    .titulo-mapa{
+        margin: 3rem auto;
+        font-size: 1.4rem;
+    }
+    
+    .localizacao{
+        display: block;
+        margin: 3rem auto;
+        text-align: center;
+        color: #fff;
+    }
+
+    form{
+        text-align: center;
+        border: 1px solid transparent;
+        box-shadow: 5px 5px 30px white;
+        border-radius: 17px;
+        padding: 1rem 5rem 2rem 5rem;
+        color: #fff;
+        display: block;
+        width: 60vh;
+        margin: 4rem auto;
+     }
+
+     .texto-sobre{
+        padding: 0 4rem;
+        text-align: justify;
+        font-size: 2rem;
+        color: #fff;
+    }
+}  
+
+@media screen and (max-width: 414px) {
+    .titulo{
+        color: white;
+        text-align: center;
+        margin: 2rem auto;
+        font-size: 1.1rem;
+    }
+    .sub-titulo{
+        color: #fff;
+        text-align: center;
+        margin: 0 auto 2rem auto;
+        font-size: 1.1rem;
+    }
+    
+    input{
+        margin: .6rem 0 1.7rem 0;
+        padding: .5rem;
+        border-radius: 15px;
+        outline: none;
+    }
+    
+    label{
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+    
+    textarea{
+        margin: .8rem 0 1.7rem 0;
+        border-radius: 8px;
+        outline: none;
+        width: 50vw;
+        text-align: left;
+    }
+
+    #mapa{
+        border-radius: 13px;
+        height: 50vh;
+        width: 80vw;
+    }
+    
+    .titulo-mapa{
+        margin: 3rem auto;
+        font-size: 1.4rem;
+    }
+    
+    .localizacao{
+        display: block;
+        margin: 3rem auto;
+        text-align: center;
+        color: #fff;
+    }
+
+    form{
+        text-align: center;
+        border: 1px solid transparent;
+        box-shadow: 5px 5px 30px white;
+        border-radius: 17px;
+        padding: 1rem 5rem 2rem 5rem;
+        color: #fff;
+        display: block;
+        width: 40vh;
+        margin: 4rem auto;
+     }
+
+     .texto-sobre{
+        padding: 0 4rem;
+        text-align: justify;
+        font-size: 2rem;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .titulo{
+        color: white;
+        text-align: center;
+        margin: 2rem auto;
+        font-size: 1.1rem;
+    }
+    .sub-titulo{
+        color: #fff;
+        text-align: center;
+        margin: 0 auto 2rem auto;
+        font-size: 1.1rem;
+    }
+    
+    input{
+        margin: .6rem 0 1.7rem 0;
+        padding: .5rem;
+        border-radius: 15px;
+        outline: none;
+    }
+    
+    label{
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+    
+    textarea{
+        margin: .8rem auto 1.7rem auto;
+        border-radius: 8px;
+        outline: none;
+        width: 40vw;
+        text-align: center;
+    }
+
+    #mapa{
+        border-radius: 13px;
+        height: 50vh;
+        width: 80vw;
+    }
+    
+    .titulo-mapa{
+        margin: 3rem auto;
+        font-size: 1.4rem;
+    }
+    
+    .localizacao{
+        display: block;
+        margin: 3rem auto;
+        text-align: center;
+        color: #fff;
+    }
+
+    form{
+        text-align: center;
+        border: 1px solid transparent;
+        box-shadow: 5px 5px 30px white;
+        border-radius: 17px;
+        padding: 1rem 0 2rem 0;
+        color: #fff;
+        display: block;
+        width: 50vh;
+        margin: 4rem auto;
+     }
+
+     .texto-sobre{
+        padding: 0 4rem;
+        text-align: justify;
+        font-size: 2rem;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .titulo{
+        color: white;
+        text-align: center;
+        margin: 2rem auto;
+        font-size: 1.1rem;
+    }
+    .sub-titulo{
+        color: #fff;
+        text-align: center;
+        margin: 0 auto 2rem auto;
+        font-size: 1.1rem;
+    }
+    
+    input{
+        margin: .6rem 0 1.7rem 0;
+        padding: .5rem;
+        border-radius: 15px;
+        outline: none;
+    }
+    
+    label{
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+    
+    textarea{
+        margin: .8rem auto 1.7rem auto;
+        border-radius: 8px;
+        outline: none;
+        width: 50vw;
+        text-align: center;
+    }
+
+    #mapa{
+        border-radius: 13px;
+        height: 50vh;
+        width: 80vw;
+    }
+    
+    .titulo-mapa{
+        margin: 3rem auto;
+        font-size: 1.4rem;
+    }
+    
+    .localizacao{
+        display: block;
+        margin: 3rem auto;
+        text-align: center;
+        color: #fff;
+    }
+
+    form{
+        text-align: center;
+        border: 1px solid transparent;
+        box-shadow: 5px 5px 30px white;
+        border-radius: 17px;
+        padding: 1rem 0 2rem 0;
+        color: #fff;
+        display: block;
+        width: 40vh;
+        margin: 4rem auto;
+     }
+
+     .texto-sobre{
+        padding: 0 4rem;
+        text-align: justify;
+        font-size: 2rem;
+        color: #fff;
+    }
+}

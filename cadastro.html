@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">   
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <main>
+        <section class="campo-esquerdo">
+            <h1>Faça o Seu Cadastro Na IANES Tech</h1>
+            <img src="img/registro.svg" class="img" alt="imagem de registro">
+        </section>
+        <section class="campo-direito">
+            <section class="conteiner">
+                <h2>Cadastro</h2>
+                <form action="#">
+                    <section id="campo-input">
+                        <input type="text" name="nome" id="nome" placeholder="Informe Seu Nome" required><br>
+                        <input type="text" name="tel" id="tel" placeholder="Informe Seu Telefone" required><br>
+                        <input type="text" nome="endereco" id="endereco" placeholder="Informe Seu Endereço" required><br>
+                        <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" required><br>
+                        <input type="email" name="mail" id="mail" placeholder="Digite Seu Email" required><br>
+                        <input type="password" name="senha" id="senha" placeholder="Informe Sua Senha" required><br>
+                        <input type="password" name="verifica-senha" id="verifica-senha"
+                            placeholder="Confirme sua senha" required><br>
+                            <span id="invalido" style="color: red;"></span>
+                    </section>
+                    <input type="submit" value="Continue" onclick="return cad()" required>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,180 @@
+@import url('http://fonts.cdnfonts.com/css/libra-serif-modern');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    border: 20px solid #fdac00;
+    height: 100vh;
+    background-image: none;
+    background-image: url("img/background.png");
+}
+
+#barra {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 1.5rem 6rem;
+}
+
+section#head{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+img.premio{
+    width: 6rem;
+    margin-top: 1.5rem;
+}
+
+#titulo{
+    font-family: 'Quintessential', cursive;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #fdac00;
+}
+
+.conteudo{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.texto{
+    font-family: 'Libra Serif Modern', sans-serif;
+    color: #fdac00;
+    font-size: 24px;
+}
+
+.input{
+    margin: 6rem 0 6rem 0;
+    text-align: center;
+}
+
+span#nome{
+    font-family: 'Libra Serif Modern', sans-serif;
+    font-size: 40px;
+}
+
+#cpf{
+    font-family: 'Libra Serif Modern', sans-serif;
+}
+
+section.assinatura1{
+    float: left;
+    width: 25rem;
+    border-bottom: #fdac00 1px solid;
+    margin-left: 15%;
+    margin-top: 6rem;
+}
+
+section.assinatura2{
+    float: right;
+    width: 25rem;
+    border-bottom: #fdac00 1px solid;
+    margin-right: 15%;
+    margin-top: 2.4rem;
+    text-align: center;
+}
+
+footer{
+    margin-top: 7rem;
+    font-family: 'Libra Serif Modern', sans-serif;
+    color: #fdac00;
+    font-size: 16px;
+}
+
+section.aluno{
+    float: left;
+    margin-left: 24%;
+}
+
+section.diretor{
+    float: right;
+    margin-right: 21%;
+    /* margin-top: -1%; */
+}
+
+span{
+    color: #fdac00;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-bottom: 1px #fdac00 dotted;
+}
+
+footer button{
+    text-align: center;
+    width: 5rem;
+    background-color: #fdac00;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-top: 1rem;
+    margin-left: 50%;
+    border-radius: 2px;
+}
+
+
+@media print {
+    ul{
+        margin-top: 0rem;
+    }
+
+    section.assinatura1{
+        float: left;
+        width: 15rem;
+        border-bottom: none;
+    }
+
+    section.assinatura2{
+        float: right;
+        width: 15rem;
+        border-bottom: #fdac00 1px solid;
+        margin-right: 15%;
+        margin-top: 2.3rem;
+        text-align: center;
+    }
+
+    footer{
+        margin-top: 7rem;
+        font-family: 'Libra Serif Modern', sans-serif;
+        color: #fdac00;
+        font-size: 16px;
+    }
+    
+    section.aluno{
+        width: 15rem;
+        border-top: #fdac00 1px solid;
+        margin-left: 20%;
+        padding-top: 0.2rem;
+        padding-left: 6rem;
+        margin-top: -2%;
+    }
+    
+    section.diretor{
+        margin-right: 20%;
+        margin-top: -1.5%;
+    }
+
+    button#print{
+        display: none;
+    }
+}
+
+    
+
+/* font-family: 'Libra Serif Modern', sans-serif; */

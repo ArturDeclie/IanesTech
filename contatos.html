@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="contato.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <section class="logo">
+                <h1>IANES TECH</h1>
+            </section>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="contatos.html" class="nav-link">Contatos</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>          
+        <form action="">
+            <h1 class="titulo">Entre Em Contato Conosco</h1>
+            <h2 class="sub-titulo">Informe Seus Dados</h2>
+
+            <label for="">Nome</label><br>
+            <input type="text" name="nome5" id="nome5" placeholder="Alexandre"><br>
+
+            <label for="">Sobrenome</label><br>
+            <input type="text" name="sobrenome5" id="sobrenome5" placeholder="Maycon"><br>
+
+            <label for="">Email</label><br>
+            <input type="text" name="mail5" id="mail5" placeholder="alexsantos@gmail.com"><br>
+
+            <label for="">Feedback</label><br>
+            <textarea name="feedback" id="feedback" cols="50" rows="8"></textarea>
+        </form>
+    <section class="localizacao">
+        <h2 class="titulo-mapa">Nossa Localização</h2>
+
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d937.8634518465695!2d-43.99906427078835!3d-19.90527253818063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa696c7274d4045%3A0xdda4b1b79ee73e56!2sR.%20Efig%C3%AAnio%20C%C3%A2ndido%20da%20Rocha%2C%20165%20-%20Incofind%C3%AAncia%2C%20Belo%20Horizonte%20-%20MG%2C%2030820-510!5e0!3m2!1spt-BR!2sbr!4v1659100782332!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+    </section>
+    </main>
+    
+    <footer>
+        <nav class="footer-bar">
+            <section class="logo-footer">
+                <h1>IANES TECH</h1>
+            </section>
+
+            <ul class="copy">
+                <li>Ianes Tech © 2022 - Todos os direitos reservados.</li>
+            </ul>
+            <ul class="contatos">
+                <li>@Ianestech <i class="fa-brands fa-instagram" id="item-footer"></i></li>
+                <li>(031)9131-31313 <i class="fa-solid fa-phone" id="item-footer"></i></li>
+                <li>Ianestech@gmail.com <i class="fa-solid fa-envelope" id="item-footer"></i></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

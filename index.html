@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>IANES TECH</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <section class="logo">
+                <h1>IANES TECH</h1>
+            </section>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="contatos.html" class="nav-link">Contatos</a></li>
+                    <li class="nav-item"><a href="#curso" class="nav-link">Cursos</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="contatos.html" class="nav-link">Contatos</a></li>
+                <li class="nav-item"><a href="#curso" class="nav-link">Curso</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="login.html">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <p class="frase-efeito">Seja Bem Vindo Ao Melhor Curso de Programação do Brasil</p>
+
+        <section class="principal-box">
+            <section class="box"><img src="img/vitor.png" class="depoimento-img" alt=""><br><br>Gostei bastante do
+                curso, me ajudou muito, pois adiquiri muito aprendizado, uma das minhas melhores aquisições de 2022,
+                recomendo muito.<br><br><span class="nome-depoimento">Vitor Generoso Alves</span></section>
+
+            <section class="box"><img src="img/luiz.png" class="depoimento-img" alt=""><br><br>Antes desse curso eu não
+                conseguia entender
+                programação de jeito nenhum, mas agora consigo entender tudo perfeitamente.<br><br><span
+                    class="nome-depoimento">Luiz Fernando</span></section>
+
+            <section class="box"><img src="img/roger.png" class="depoimento-img" alt=""><br><br>Com esse curso eu
+                consegui um emprego com
+                apenas 6 meses de aprendizado, pode comprar galera, super recomendo.<br><br><span
+                    class="nome-depoimento">Rogério Da Silva</span></section>
+
+            <section class="box"><img src="img/rhian.png" class="depoimento-img" alt=""><br><br>Esse curso tem os
+                melhores professores de tecnologia, uma
+                didádica incrível, que me ajudou bastante com o aprendizado.<br><br><span class="nome-depoimento">Rhian
+                    Pereira</span></section>
+        </section>
+
+        <!-- <h2 class="titulo-sobre">Sobre</h2>
+
+        <span class="texto-sobre">
+            A empresa IANES Tech, com muitos anos de mercado, oferece vários cursos na área de 
+            tecnologia e recentemente viu a necessidade de atualizar sua forma de ensino, adotando
+            também o ensino a distancia. Junte-se a mais de 100 mil alunos em nossa plataforma e
+            se torne um profissional desejado pelo mercado de trabalho. 
+        </span> -->
+
+
+        <a name="curso"></a>
+
+        <h2 class="titulo-sobre">Nossas Aulas</h2>
+        <section class="p-conteiner">
+            <section class="s-conteiner">
+                <section>
+                    <img src="img/bg-sobre.png" alt="">
+                    <p class="banner">1 - Instalação</p>
+                </section>
+            </section>
+
+            <section class="s-conteiner">
+                <section>
+                    <img src="img/bg-sobre.png" alt="">
+                    <p class="banner">2 - Inserção de Dados</p>
+                </section>
+            </section>
+
+            <section class="s-conteiner">
+                <section>
+                    <img src="img/bg-sobre.png" alt="">
+                    <p class="banner">3 - Selects e Agrupamentos</p>
+                </section>
+            </section>
+
+            <section class="s-conteiner">
+                <section>
+                    <img src="img/bg-sobre.png" alt="">
+                    <p class="banner">4 - Outros Comandos</p>
+                </section>
+            </section>
+
+            <section class="s-conteiner">
+                <section>
+                    <img src="img/bg-sobre.png" alt="">
+                    <p class="banner">5 - Views e Stored Procedures</p>
+                </section>
+            </section>
+
+            <section class="s-conteiner">
+                <section>
+                    <img src="img/bg-sobre.png" alt="">
+                    <p class="banner">6 - Functions e Triggers</p>
+                </section>
+            </section>
+        </section>
+
+        <h2 class="titulo-planos">Planos</h2>
+
+        <section class="box-preco">
+            <h3>Diamond <i class="fa-solid fa-gem" id="diamond"></i></h3>
+            <h3>R$30,00 / 12 mêses</h3><br>
+            <p>• Plano anual</p>
+            <p>• Acesso a todos os curso</p>
+            <p>• Tire todas as duvidas quando quiser</p>
+        </section>
+        <section class="box-preco">
+            <h3>Gold <i class="fa-solid fa-sack-dollar" id="gold"></i></h3>
+            <h3>R$40,00 / 3 mêses</h3><br>
+            <p>• Plano trimestral</p>
+            <p>• Acesso na maioria dos cursos</p>
+            <p>• Você tem direito a 4 duvidas / mês</p>
+        </section>
+        <section class="box-preco">
+            <h3>Silver <i class="fa-solid fa-coins" id="silver"></i></i></h3>
+            <h3>R$50,00 / mêses</h3><br>
+            <p>• Plano mensal</p>
+            <p>• Acesso em apenas 1 curso</p>
+            <p>• Você tem direito a 4 duvidas / mês</p>
+        </section>
+    </main>
+
+    <a name="contato"></a>
+
+    <footer>
+        <nav class="footer-bar">
+            <section class="logo-footer">
+                <h1>IANES TECH</h1>
+            </section>
+
+            <ul class="copy">
+                <li>Ianes Tech © 2022 - Todos os direitos reservados.</li>
+            </ul>
+            <ul class="contatos">
+                <li>@Ianestech <i class="fa-brands fa-instagram" id="item-footer"></i></li>
+                <li>(031)9131-31313 <i class="fa-solid fa-phone" id="item-footer"></i></li>
+                <li>Ianestech@gmail.com <i class="fa-solid fa-envelope" id="item-footer"></i></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/293e2d2061.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

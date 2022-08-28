@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <main id="container-login">
+            <h2 id="login">Login</h2>
+            <form action="">
+                <section id="campo-input">
+                    <span id="invalido" style="color: red;"></span><br>
+                    <input type="email" name="mail" id="mail" placeholder="Digite Seu Email" required><br>
+                    <input type="password" name="senha" id="senha" placeholder="Informe Sua Senha" required>
+                </section>
+                <input type="submit" value="Continue" required onclick= "return verificar()">
+                <a href="cadastro.html" id="criar-conta"> Crie Sua Conta</a>
+            </form>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(img/background.png); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+.campo-esquerdo{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.campo-esquerdo > h1{
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+
+.img{
+    width: 35vw;
+}
+
+.campo-direito{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner{
+    background: white;
+    width: 45%;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 10px 40px black;
+}
+
+.conteiner > h2{
+    font-size: 170%;
+    padding-left: 0.85rem;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#campo-input{
+    padding: 0 1rem;
+}
+
+#campo-input input{
+    outline: none;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 15rem;
+    padding: .5rem 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#campo-input input:focus{
+    border-bottom: 1px solid #8e2de2;
+}
+
+form input[type="submit"]{
+    margin: 2rem 0 0 0.85rem;
+    padding: 0.5rem;
+    width: 40%;
+    background: linear-gradient(to left, #4776E6, #8e54e9);
+    color: white;
+    font-weight: 300;
+    border-radius: 13px;
+    font-size: .9rem;
+}
+
+form input[type="submit"]:hover{
+    font-weight: 800;
+    width: 60%;
+    cursor: pointer;
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (max-width: 950px) {
+    .conteiner{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        flex-direction: column;
+    }
+
+    .img{
+        display: none;
+    }
+
+    .campo-esquerdo > h1{
+        font-size: 5vw;
+    }
+
+    .campo-direito{
+        width: 100%;
+        height: auto;
+    }
+
+    .campo-esquerdo{
+        padding-bottom: 10%;
+        width: 100%;
+        height: auto;
+    }
+
+    #campo-input input{
+        font-size: 0.9rem;
+    }
+    
+    .conteiner > h2{
+        font-size: 150%;
+        padding-left: 0.85rem;
+        color: black;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 367px) {
+    #campo-input input{
+        font-size: 9px;
+    }
+}
